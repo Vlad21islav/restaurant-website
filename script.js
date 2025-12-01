@@ -1,30 +1,28 @@
 // Demo data
 const MENU = [
-    // С картинками
-    { id: 'shawarma-cheese-wrap', name: 'Шаурма в сырном лаваше', price: 150, category: 'Шаурма', img: 'images/shawarma.jpg' },
-    { id: 'drink-sprite', name: 'Спрайт', price: 60, category: 'Напитки', img: 'images/sprite.jpeg' },
-    { id: 'burger-marble', name: 'Бургер мраморный', price: 250, category: 'Бургеры', img: 'images/black_XXL_burger.jpg' },
-    { id: 'burger-beef', name: 'Бургер с говядиной', price: 180, category: 'Бургеры', img: 'images/burger_with_beef_patty.jpg' },
-    { id: 'hotdog-french', name: 'Хот-дог французский', price: 160, category: 'Хот-доги', img: 'images/sausages.jpg' },
-    { id: 'burger-chicken', name: 'Бургер с курицей', price: 180, category: 'Бургеры', img: 'images/burger_shef_pomidorom.jpg' },
-
     // Шаурма
     { id: 'shawarma-classic', name: 'Шаурма в обычном лаваше', price: 150, category: 'Шаурма' },
+    { id: 'shawarma-cheese-wrap', name: 'Шаурма в сырном лаваше', price: 150, category: 'Шаурма', img: 'images/shawarma.jpg' },
     { id: 'shawarma-with-cheese', name: 'Шаурма с сыром', price: 180, category: 'Шаурма' },
     { id: 'shawarma-plate', name: 'Шаурма на тарелке', price: 180, category: 'Шаурма' },
     { id: 'shawarma-xxl', name: 'Шаурма XXL', price: 230, category: 'Шаурма' },
 
     // Бургеры
+    { id: 'burger-beef', name: 'Бургер с говядиной', price: 180, category: 'Бургеры', img: 'images/burger_with_beef_patty.jpg' },
+    { id: 'burger-chicken', name: 'Бургер с курицей', price: 180, category: 'Бургеры', img: 'images/burger_shef_pomidorom.jpg' },
+    { id: 'burger-marble', name: 'Бургер мраморный', price: 250, category: 'Бургеры', img: 'images/black_XXL_burger.jpg' },
     { id: 'burger-sausage', name: 'Бургер с куриной сосиской', price: 180, category: 'Бургеры' },
 
     // Хот-доги
     { id: 'hotdog-danish', name: 'Хот-дог датский', price: 160, category: 'Хот-доги' },
+    { id: 'hotdog-french', name: 'Хот-дог французский', price: 160, category: 'Хот-доги', img: 'images/sausages.jpg' },
 
     // Картофель
     { id: 'potato-rustic', name: 'Картофель деревенский', price: 90, category: 'Картофель' },
     { id: 'potato-fries', name: 'Картофель фри', price: 80, category: 'Картофель' },
 
     // Напитки
+    { id: 'drink-sprite', name: 'Спрайт', price: 60, category: 'Напитки', img: 'images/sprite.jpeg' },
     { id: 'drink-fanta', name: 'Фанта', price: 60, category: 'Напитки' },
     { id: 'drink-cola', name: 'Кола', price: 60, category: 'Напитки' },
     { id: 'drink-water', name: 'Вода минеральная', price: 50, category: 'Напитки' },
