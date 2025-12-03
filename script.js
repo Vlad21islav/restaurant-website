@@ -15,7 +15,7 @@ const MENU = [
 
     // Хот-доги
     { id: 'hotdog-danish', name: 'Хот-дог датский', price: 160, category: 'Хот-доги', img: 'images/hotdog.jpg' },
-    { id: 'hotdog-french', name: 'Хот-дог французский', price: 160, category: 'Хот-доги', img: 'images/franchdog.jpg' },
+    { id: 'hotdog-french', name: 'Хот-дог французский', price: 160, category: 'Хот-доги', img: 'images/sausages.jpg' },
 
     // Картофель
     { id: 'potato-rustic', name: 'Картофель деревенский', price: 90, category: 'Картофель', img: 'images/country_patato.jpg' },
