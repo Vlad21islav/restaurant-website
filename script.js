@@ -54,10 +54,6 @@ function renderMenu(items){
         <div class="chips">
             ${item.category ? `<span class="chip">${item.category}</span>` : ''}
         </div>
-        <div class="cta" style="margin-top:10px;">
-            <button class="btn btn-primary" data-add="${item.id}">В корзину</button>
-            <button class="btn" data-custom="${item.id}">Настроить</button>
-        </div>
         </div>
     `;
     grid.appendChild(el);
