@@ -136,34 +136,5 @@ CATEGORIES.forEach((item, index)=>{
     document.getElementById(`categoty-${index}`).onclick = ()=> renderMenu(item == 'Все' ? MENU : MENU.filter((m)=>m.category==item));
 });
 
-// Modal
-const modal = document.getElementById('modal');
-function openModal(){ modal.style.display = 'grid'; }
-function closeModal(){ modal.style.display = 'none'; }
-document.getElementById('btn-order').onclick = openModal;
-document.getElementById('btn-order-2').onclick = openModal;
-document.getElementById('close-modal').onclick = closeModal;
-modal.addEventListener('click', (e)=>{ if(e.target===modal) closeModal(); });
-
-document.getElementById('submit-order').onclick = ()=>{
-    const name = document.getElementById('inp-name').value.trim();
-    const phone = document.getElementById('inp-phone').value.trim();
-    const address = document.getElementById('inp-address').value.trim();
-    const note = document.getElementById('inp-note').value.trim();
-    const items = Object.values(cart);
-    if(!items.length){ alert('Добавьте что-нибудь в корзину'); return; }
-    if(!name || !phone || !address){ alert('Заполните имя, телефон и адрес'); return; }
-
-    const order = {
-    name, phone, address, note,
-    items: items.map(x=>({id:x.item.id, name:x.item.name, qty:x.qty, price:x.item.price})),
-    total: items.reduce((s,x)=> s + x.item.price*x.qty, 0),
-    time: new Date().toLocaleString('ru-RU')
-    };
-    console.log('ORDER:', order);
-    alert('Спасибо! Заказ принят. Мы свяжемся с вами в ближайшее время.');
-    closeModal();
-};
-
 // Init
 renderMenu(MENU);
